@@ -1,0 +1,24 @@
+<div class="doclist">
+    <h3>Specalist Details</h3>
+    <h5 (click)="goback()">Back</h5>
+    <h4 (click)="addnew()">Add Specalist</h4>
+      <table>
+          <thead>
+              <th>Specalist</th>
+              <th>Degree</th>
+              <th>Department</th>
+              <th></th>
+              <th></th>
+          </thead>
+          <tbody>
+              <tr *ngFor="let spec of speclist">
+                  <td>{{spec.specalist_at}}</td>
+                  <td>{{spec.degree}}</td>
+                  <td>{{spec.department}}</td>
+                  <td class="viewers" (click)="navigate(spec._id)">view</td>
+                  <td class="viewers" (click)="delete(spec._id)">Delete</td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+  

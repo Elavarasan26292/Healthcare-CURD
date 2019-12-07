@@ -1,0 +1,43 @@
+.adddoctor{
+   h3{
+       text-align: center;
+       padding-top: 3%;
+       padding-bottom: 3%;
+   }
+   .labelclass{
+    text-align: right;
+    padding-right: 5%;
+    label{
+        padding-left: 1%;
+        margin-top: 3px;
+         margin-bottom: 3px;
+    }
+   }
+   .inputclass{
+    br{
+        padding-top: 3px;
+    }
+    input{
+        width: 40%;
+        margin-top: 3px;
+    margin-bottom: 3px;
+    }
+   }
+   .inputcheckclass{
+    margin-top: 3px;
+    margin-bottom: 3px;
+    label{
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+}
+.signinbtn{
+position: relative;
+margin: 0 auto;
+button{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 8px;
+}
+}
+}

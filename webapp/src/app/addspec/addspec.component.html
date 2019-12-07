@@ -1,0 +1,18 @@
+<div class="adddoctor">
+    <h3>Add new Specalist Details</h3>
+    <div class="container-fluid">
+        <div class="row">
+    <div class="col-6 col-md-6 col-sm-6 col-lg-6 labelclass"><label>Domain(Specalist at) :</label></div>
+    <div class="col-6 col-md-6 col-sm-6 col-lg-6 inputclass"><input type="text" [(ngModel)]="specdata.specalist_at" class="formcontrol"/></div>
+    <div class="col-6 col-md-6 col-sm-6 col-lg-6 labelclass"><label>Degree :</label></div>
+    <div class="col-6 col-md-6 col-sm-6 col-lg-6 inputclass"><input type="text" [(ngModel)]="specdata.degree" class="formcontrol"/></div>
+    <div class="col-6 col-md-6 col-sm-6 col-lg-6 labelclass"><label>Department :</label></div>
+    <div class="col-6 col-md-6 col-sm-6 col-lg-6 inputclass"><input type="text" [(ngModel)]="specdata.department" class="formcontrol"/></div>
+    <div class="signinbtn">
+            <button (click)="goback()" type="button">Cancel</button>
+        <button (click)="savedata()" type="button">Submit</button>
+    </div>
+    </div>
+    </div>
+    </div>
+    

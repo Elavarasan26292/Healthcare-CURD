@@ -1,0 +1,40 @@
+.doclist{
+    padding-top: 1%;
+    height: auto;
+    h3{
+        text-align: center;
+    }
+    h5{
+        margin-left: 3%;
+        cursor:pointer;
+        color:#1976d2; 
+    }
+    h4{
+        text-align: right;
+        margin-right: 3%;
+        cursor:pointer;
+        color:#1976d2;
+    }
+    table{
+        width: 100%;
+        border: 1px solid #ccc;
+        th{
+            text-align: center;
+        }
+        tr{
+            text-align: center;
+            border: 1px solid #ccc;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        td{
+            border: 1px solid #ccc; 
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        .viewers{
+            cursor:pointer;
+            color:#1976d2;
+        }
+    }
+}

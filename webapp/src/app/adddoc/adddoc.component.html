@@ -1,0 +1,30 @@
+<div class="adddoctor">
+<h3>Add new Doctor</h3>
+<div class="container-fluid">
+    <div class="row">
+<div class="col-6 col-md-6 col-sm-6 col-lg-6 labelclass"><label>Doctor Name :</label></div>
+<div class="col-6 col-md-6 col-sm-6 col-lg-6 inputclass"><input type="text" [(ngModel)]="docdata.doc_name" class="formcontrol"/></div>
+<div class="col-6 col-md-6 col-sm-6 col-lg-6 labelclass"><label>Age :</label></div>
+<div class="col-6 col-md-6 col-sm-6 col-lg-6 inputclass"><input type="text" [(ngModel)]="docdata.age" class="formcontrol"/></div>
+<div class="col-6 col-md-6 col-sm-6 col-lg-6 labelclass"><label>Email id :</label></div>
+<div class="col-6 col-md-6 col-sm-6 col-lg-6 inputclass"><input type="text" [(ngModel)]="docdata.emailid" class="formcontrol"/></div>
+<div class="col-6 col-md-6 col-sm-6 col-lg-6 labelclass"><label>Phone No :</label></div>
+<div class="col-6 col-md-6 col-sm-6 col-lg-6 inputclass"><input type="text" [(ngModel)]="docdata.ph_no" class="formcontrol"/></div>
+<div class="col-6 col-md-6 col-sm-6 col-lg-6 labelclass"><label>Qualification :</label></div>
+<div class="col-6 col-md-6 col-sm-6 col-lg-6 inputclass"><input type="text" [(ngModel)]="docdata.qualification" class="formcontrol"/></div>
+<div class="col-6 col-md-6 col-sm-6 col-lg-6 labelclass"><label>Surgey's Attended :</label></div>
+<div class="col-6 col-md-6 col-sm-6 col-lg-6 inputclass"><input type="text" [(ngModel)]="docdata.surgery_attended" class="formcontrol"/></div>
+<div class="col-6 col-md-6 col-sm-6 col-lg-6 labelclass"><label>Success Rate :</label></div>
+<div class="col-6 col-md-6 col-sm-6 col-lg-6 inputclass"><input type="text" [(ngModel)]="docdata.success_ratio" class="formcontrol"/></div>
+<div class="col-6 col-md-6 col-sm-6 col-lg-6 labelclass"><label>Specalist at :</label></div>
+<div class="col-6 col-md-6 col-sm-6 col-lg-6 inputcheckclass">
+       <span *ngFor="let doc of speclist"> <input [(ngModel)]="doc.selected" type="checkbox"/><label class="checklabel">{{doc.specalist_at}}</label></span>
+        <!-- <input type="checkbox"/><label class="checklabel">sdds</label> -->
+</div>
+<div class="signinbtn">
+        <button (click)="goback()" type="button">Cancel</button>
+    <button (click)="savedata()" type="button">Submit</button>
+</div>
+</div>
+</div>
+</div>

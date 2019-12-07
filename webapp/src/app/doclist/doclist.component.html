@@ -1,0 +1,25 @@
+<div class="doclist">
+  <h3>Doctor Details</h3>
+  <h5 (click)="goback()">Back</h5>
+  <h4 (click)="addnew()">Add Doctor</h4>
+    <table>
+        <thead>
+            <th>Doctor Name</th>
+            <th>Age</th>
+            <th>Specalist</th>
+            <th>Success Ratio</th>
+            <th></th>
+            <th></th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let doc of doclist">
+                <td>{{doc.doc_name}}</td>
+                <td>{{doc.age}}</td>
+                <td>{{doc.age}}</td>
+                <td>{{doc.age}}</td>
+                <td class="viewers" (click)="navigate(doc._id)">view</td>
+                <td class="viewers" (click)="delete(doc._id)">Delete</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
