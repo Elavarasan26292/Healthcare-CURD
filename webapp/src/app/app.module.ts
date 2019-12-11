@@ -9,6 +9,8 @@ import { DoclistComponent } from './doclist/doclist.component';
 import { AddspecComponent } from './addspec/addspec.component';
 import { AdddocComponent } from './adddoc/adddoc.component';
 import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -23,9 +25,12 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    MatDialogModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [DoclistComponent,SpeclistComponent]
 })
 export class AppModule { }
