@@ -20,7 +20,7 @@
     "html-pdf": "^2.2.0",
     "http-errors": "^1.6.3",
     "joi": "^13.4.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "mongoose": "4.7.3",
     "mongoose-auto-increment": "^5.0.1",
     "mongoose-validator": "^2.1.0",
